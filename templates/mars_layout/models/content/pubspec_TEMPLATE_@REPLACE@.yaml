@@ -1,0 +1,34 @@
+name: <[@ sys.projectName @]>
+description: "<[@ packageDescription @]>"
+homepage: "<[@ packageHomepage @]>"
+version: "<[@ packageVersion @]>"
+publish_to: '{{ dart.publish_to }}'
+
+environment:
+  sdk: {{ dart.sdk.version }}
+
+dependencies:
+  {{ pubspec.dep.path }}
+
+  {{ dart.lib.module_property_base }}
+  {{ dart.lib.rover_modules_config }}
+  {{ dart.lib.mars_layout_config }}
+
+  {{ dart.lib.mars_layout_base }}
+
+  {{ dart.lib.mars_msc_markup }}
+  {{ dart.lib.mars_msc_doc_mapping }}
+
+  {{ dart.lib.mars_api_models }}
+
+  # tmp base_ui
+  {{ dart.lib.mars_layout_base_ui_config }}
+
+  {{ dart.lib.mars_layout_base_def_config }}
+
+dev_dependencies:
+  {{ pubspec.dev_dep.lints }}
+  {{ pubspec.dev_dep.test }}
+
+  # stell packages reihenfolge sicher (code gen)
+  {{ dart.lib.<[@ layout.config.packageName @]> }}
