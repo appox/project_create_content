@@ -1,0 +1,6 @@
+_builder/
+code-gen.sh
+project-info.yaml
+CHANGELOG_TEMPLATE_.md
+pubspec_TEMPLATE_.yaml
+
