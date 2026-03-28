@@ -1,0 +1,10 @@
+{
+  "name": "moduleInfo",
+  "publicNamePrefix": "module.",
+  "instance": {
+    "hello": {
+      "instanceId": "A",
+      "description": "hello module widget - INIT "
+    }
+  }
+}

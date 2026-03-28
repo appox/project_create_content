@@ -1,0 +1,91 @@
+{
+  "settings": {
+    "instanceGroup": "basePublishedProjects",
+    "packageName": "de.appcosmos.base.published_projects"
+  },
+  "packages": {
+    "packageModel": {
+      "packageDir": "{{ project.package.path.<[@ layout.model.packageName @]> }}",
+      "packageClassPrefix": "<[@ layout.model.classPrefix @]>"
+    },
+    "packageLayout": {
+      "packageDir": "{{ project.package.path.<[@ layout.config.packageName @]> }}",
+      "packageClassPrefix": "<[@ layout.config.classPrefix @]>"
+    },
+    "packageTag": {
+      "packageDir": "{{ project.package.path.<[@ layout.tag.packageName @]> }}",
+      "packageClassPrefix": "<[@ layout.tag.classPrefix @]>"
+    }
+  },
+  "sourceConfig": {
+    "mapping": {
+      "layout": {
+        "source": {
+          "package": "packageLayout",
+          "packagePath": "mapping"
+        }
+      },
+      "model": {
+        "source": {
+          "package": "packageModel",
+          "packagePath": "model"
+        }
+      },
+      "layMaMo": {
+        "source": {
+          "package": "packageLayout",
+          "packagePath": "lay_ma_mo"
+        }
+      }
+    },
+    "widget": {
+      "gen": {
+        "source": {
+          "package": "packageLayout",
+          "packagePath": "widget"
+        }
+      },
+      "impl": {
+        "source": {
+          "package": "packageLayout",
+          "packagePath": "widget"
+        }
+      }
+    },
+    "layout": {
+      "gen": {
+        "source": {
+          "package": "packageLayout",
+          "packagePath": "layout"
+        }
+      },
+      "impl": {
+        "source": {
+          "package": "packageLayout",
+          "packagePath": "layout"
+        }
+      },
+      "model": {
+        "source": {
+          "package": "packageModel",
+          "packagePath": "model"
+        }
+      }
+    },
+    "tag": {
+      "gen": {
+        "source": {
+          "package": "packageTag",
+          "packagePath": "tag"
+        }
+      },
+      "impl": {
+        "source": {
+          "package": "packageTag",
+          "packagePath": "tag"
+        }
+      }
+    }
+  }
+}
+

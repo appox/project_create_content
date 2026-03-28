@@ -1,0 +1,5 @@
+lib/src/layouts_gen
+
+# template files
+layouts-config/config.json
+create-layouts-code.sh

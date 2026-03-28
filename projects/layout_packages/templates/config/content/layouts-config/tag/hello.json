@@ -1,0 +1,21 @@
+{
+  "name": "hello",
+  "description": "hello test tag",
+  "attributes": {
+    "info": {
+      "type": "string",
+      "description": "Text der dargestellt werden soll.",
+      "required": false
+    }
+  },
+  "layouts": {
+    "types": ["default"],
+    "definitions": {
+      "mainLayout": {
+        "layoutType": "module"
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,16 @@
+{
+    "name": "genericDocFieldsColumn",
+    "enum": {
+        "helloPanel": {
+            "id": 1,
+            "description": "hello panel (tmp)",
+            "mapping": {
+                "packageName": "packageLayout",
+                "mappingName": "hello"
+            }
+        }
+    }
+  }
+
+  
+  
