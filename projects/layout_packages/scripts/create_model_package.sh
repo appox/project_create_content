@@ -1,9 +1,19 @@
 #!/bin/sh
 
-echo "# create published projects layout package: model"
+
+INSTANCE_NAME="$1"
+
+if [ -z "$INSTANCE_NAME" ]; then
+    echo "Error: missing instance name parameter" >&2
+    echo "Usage: $0 <instanceName> [...]" >&2
+    exit 1
+fi
 
 PROJECT_DIR=/opt/project_create_content/projects/layout_packages
-INSTANCE_DIR=$PROJECT_DIR/instance/published_projects
+INSTANCE_DIR=$PROJECT_DIR/instance/$INSTANCE_NAME
+
+echo "# create layout package: $INSTANCE_NAME model"
+echo "# INSTANCE_DIR: $INSTANCE_DIR"
 
 project-create create \
 	--template_dir $PROJECT_DIR/templates/models/content \
