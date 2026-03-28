@@ -1,0 +1,16 @@
+name: <[@ sys.projectName @]>
+description: ""
+homepage: ""
+version: "1.0.0+1"
+publish_to: 'none'
+
+# info: muss exisiteren - package bootstrapping
+
+environment:
+  sdk: '>=3.10.3 <4.0.0'
+
+dependencies:
+  # foo
+
+dev_dependencies:
+  # bar

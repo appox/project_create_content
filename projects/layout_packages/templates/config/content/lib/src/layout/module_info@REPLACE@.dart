@@ -1,7 +1,7 @@
 
-import 'package:<[@ layout.config.packageName @]>/mars_layout_base_published_projects_config.dart';
 import 'package:<[@ layout.config.packageName @]>/src/layouts_gen/layout/base/module_info.dart';
 import 'package:rover_modules_config/ui.dart';
+import 'package:<[@ layout.config.packageName @]>/<[@ layout.config.packageName @]>.dart';
 
 class <[@ layout.config.classPrefix @]>LayoutModuleInfo extends <[@ layout.config.classPrefix @]>BaseLayoutModuleInfo with <[@ layout.config.classPrefix @]>WidgetRefSupport {
 

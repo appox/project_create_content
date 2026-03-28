@@ -3,7 +3,7 @@
 
 import 'package:mars_api_models/mars_api_models.dart';
 import 'package:mars_base/mars_base.dart';
-import 'package:<[@ layout.model.packageName @]>/mars_layout_base_published_projects_model.dart';
+import 'package:<[@ layout.model.packageName @]>/<[@ layout.model.packageName @]>.dart';
 import 'package:mars_msc_markup/mars_msc_markup.dart';
 import 'package:<[@ layout.tag.packageName @]>/src/layouts_gen/layouts.dart';
 import 'package:<[@ layout.tag.packageName @]>/src/layouts_gen/tag/base/./hello.dart';

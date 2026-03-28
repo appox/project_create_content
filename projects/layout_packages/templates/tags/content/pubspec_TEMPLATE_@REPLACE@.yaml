@@ -20,7 +20,7 @@ dependencies:
   {{ dart.lib.mars_msc_project_config }}
   {{ dart.lib.mars_msc_tag_builder }}
 
-  {{ dart.lib.mars_layout_base_published_projects_model }}
+  {{ dart.lib.<[@ layout.model.packageName @]> }}
 
   # fuer fallback layouts
   {{ dart.lib.mars_layout_base_def }}

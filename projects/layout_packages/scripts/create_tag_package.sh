@@ -2,10 +2,11 @@
 
 
 INSTANCE_NAME="$1"
+BASE_PROJECT_NAME="$2"
 
-if [ -z "$INSTANCE_NAME" ]; then
+if [ -z "$INSTANCE_NAME" ] || [ -z "$BASE_PROJECT_NAME" ]; then
     echo "Error: missing instance name parameter" >&2
-    echo "Usage: $0 <instanceName> [...]" >&2
+    echo "Usage: $0 <instanceName> <projectName> [...]" >&2
     exit 1
 fi
 
@@ -20,6 +21,6 @@ project-create create \
 	--base_properties_file $INSTANCE_DIR/properties/base.properties \
 	--properties_file $INSTANCE_DIR/properties/tag.properties \
 	--env_properties_file /opt/project_create_content/env/mars.properties \
-	--project_name mars_layout_base_published_projects_tags \
+	--project_name ${BASE_PROJECT_NAME}_tags \
 	$@
 
