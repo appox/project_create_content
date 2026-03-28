@@ -1,0 +1,31 @@
+name: <[@ sys.projectName @]>
+description: "<[@ packageDescription @]>"
+homepage: "<[@ packageHomepage @]>"
+version: "<[@ packageVersion @]>"
+publish_to: '{{ dart.publish_to }}'
+
+environment:
+  sdk: {{ dart.sdk.version }}
+
+dependencies:
+  {{ dart.lib.mars_layout_base_ui_model }}
+
+  {{ dart.lib.mars_base }}
+
+  {{ dart.lib.mars_api_models }}
+  {{ dart.lib.mars_api_model_builder }}
+
+  {{ dart.lib.mars_msc_markup }}
+  {{ dart.lib.mars_msc_markup_parser }}
+  {{ dart.lib.mars_msc_project_config }}
+  {{ dart.lib.mars_msc_tag_builder }}
+
+  {{ dart.lib.mars_layout_base_published_projects_model }}
+
+  # fuer fallback layouts
+  {{ dart.lib.mars_layout_base_def }}
+
+dev_dependencies:
+  {{ pubspec.dev_dep.lints }}
+  {{ pubspec.dev_dep.test }}
+  {{ pubspec.dev_dep.build_runner }}
