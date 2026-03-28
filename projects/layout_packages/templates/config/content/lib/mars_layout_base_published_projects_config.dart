@@ -1,6 +1,6 @@
 library;
 
-export 'src/ref_support@REPLACE@.dart';
+export 'src/ref_support.dart';
 
 export 'src/layouts_gen/export_mapping_layout.dart';
 
@@ -8,7 +8,7 @@ export 'src/layouts_gen/export_mapping_layout.dart';
 // export 'src/layouts_gen/widget/widget_ref.dart';
 
 /// legacy
-export 'src/ui/ui_const@REPLACE@.dart';
+export 'src/ui/ui_const.dart';
 
 export 'src/layouts_gen/layout/layout_definition.dart';
 
