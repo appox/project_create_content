@@ -1,6 +1,6 @@
 {
   "settings": {
-    "instanceGroup": "basePublishedProjects",
+    "instanceGroup": "<[@ layout.instanceGroup @]>",
     "packageName": "<[@ layout.packageName @]>"
   },
   "packages": {
