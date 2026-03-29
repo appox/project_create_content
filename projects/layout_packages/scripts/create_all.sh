@@ -43,6 +43,9 @@ echo "#"
 echo "mpm pub update"
 
 echo "# ---- Integration in das project"
+echo "#"
+echo "# see Documentation: /home/frank/Documents/mars_server/add_layout_and_tag_Support_to_project.md"
+echo "#"
 
 echo "# 5] checken - sollte keine compile Fehler mehr geben."
 echo "... DONE!"

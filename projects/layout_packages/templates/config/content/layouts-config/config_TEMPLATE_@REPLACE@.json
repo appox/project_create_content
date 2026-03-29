@@ -1,7 +1,7 @@
 {
   "settings": {
     "instanceGroup": "basePublishedProjects",
-    "packageName": "de.appcosmos.base.<[@ sys.projectName @]>"
+    "packageName": "<[@ layout.packageName @]>"
   },
   "packages": {
     "packageModel": {
