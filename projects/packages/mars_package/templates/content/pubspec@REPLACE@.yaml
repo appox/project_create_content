@@ -1,0 +1,12 @@
+name: <[@ sys.projectName @]>
+description: "<[@ packageDescription @]>"
+homepage: "<[@ packageHomepage @]>"
+version: "<[@ packageVersion @]>"
+publish_to: 'none'
+
+environment:
+  sdk: 3.0.0  
+
+
+
+

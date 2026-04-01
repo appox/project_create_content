@@ -1,0 +1,16 @@
+name: <[@ sys.projectName @]>
+description: "BOOTSTRAP_REPO"
+homepage: "http://foo"
+version: "<[@ packageVersion @]>"
+publish_to: 'none'
+
+environment:
+  sdk: {{ dart.sdk.version }}
+
+dependencies:
+
+
+dev_dependencies:
+
+
+
