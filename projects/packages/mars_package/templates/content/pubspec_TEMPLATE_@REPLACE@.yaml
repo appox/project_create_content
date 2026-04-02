@@ -1,0 +1,15 @@
+name: <[@ sys.projectName @]>
+description: "<[@ packageDescription @]>"
+homepage: "<[@ packageHomepage @]>"
+version: "<[@ packageVersion @]>"
+publish_to: '{{ dart.publish_to }}'
+
+environment:
+  sdk: {{ dart.sdk.version }}
+
+dependencies:
+  {{ dart.lib.cora_base }}
+
+dev_dependencies:
+  {{ pubspec.dev_dep.lints }}
+  {{ pubspec.dev_dep.test }}  
